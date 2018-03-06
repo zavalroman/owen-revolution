@@ -68,6 +68,7 @@ object Form1: TForm1
     Width = 409
     Height = 45
     Max = 100
+    SelEnd = 50
     TabOrder = 0
     OnChange = PressureChange
   end

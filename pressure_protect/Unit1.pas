@@ -47,9 +47,9 @@ begin
 
   delta := press - setpo;
   ratio := press/setpo;
-  faeks := setpo/ratio;
+  faeks := setpo/(ratio);
   //delay := Round(Exp(faeks*ln(2)));
-  delay := Exp(delta*10*ln(2));
+  delay := 100 - Exp(delta*40*ln(1.1));
 
   lblFakeSetpoint.Caption := FloatToStr(faeks);
   PresMonitor.Caption := FloatToStr(Pressure.Position/10);
